@@ -9,4 +9,10 @@ Create a function argument  called a, b of type int
         bool: answer
 */
 
-void main() {}
+bool func(int a, int b) {
+    return a%2==0 || b%2==0;
+}
+
+void main() {
+    print(func(1,2));
+}
