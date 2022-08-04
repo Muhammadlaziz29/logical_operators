@@ -8,4 +8,13 @@ Given a two-digit integer a,  check the following statement "All digits of the n
         bool: answer
 */
 
-void main() {}
+bool func(int a) {
+    int x = a;
+    int a1 = x%10;
+    int a2 = x~/10;
+    return a1 == a2 && a2==a1;
+}
+
+void main() {
+    print(func(32));
+}
