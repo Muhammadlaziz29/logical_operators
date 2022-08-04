@@ -10,4 +10,12 @@ Given three integers a, b, c,  check the following statement "The number b is be
         bool: answer
 */
 
-void main() {}
+bool func(int a, int b, int c) {
+    return b>a && b<c || a>b && b>c;
+}
+
+
+
+void main() {
+    print(func(1,4,3));
+}
